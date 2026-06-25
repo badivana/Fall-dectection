@@ -1,9 +1,18 @@
-![Arduino](https://img.shields.io/badge/Arduino-Embedded-blue)
-![TinyML](https://img.shields.io/badge/TinyML-Machine%20Learning-green)
-![Python](https://img.shields.io/badge/Python-3.x-yellow)
-![License](https://img.shields.io/badge/License-MIT-success)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+<h1 align="center">
+🚨 Fall Detection System
+</h1>
 
+<p align="center">
+AI-powered Fall Detection using Arduino, MPU6050 and TinyML
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Arduino-Embedded-blue">
+<img src="https://img.shields.io/badge/TinyML-Machine%20Learning-green">
+<img src="https://img.shields.io/badge/Python-3.x-yellow">
+<img src="https://img.shields.io/badge/License-MIT-success">
+<img src="https://img.shields.io/badge/Status-Completed-brightgreen">
+</p>
 # 🚨 Fall Detection System
 
 An AI-powered Fall Detection System built using Arduino and motion sensors to detect accidental falls in real time. The project uses a trained machine learning model to classify sensor data and identify fall events.
@@ -60,7 +69,7 @@ Fall-dectection/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/badivana/Fall-dectection.git
+git clone https://github.com/badivana/Fall-Detection-System.git
 ```
 
 ### 2. Open the Arduino project
@@ -68,7 +77,7 @@ git clone https://github.com/badivana/Fall-dectection.git
 Open:
 
 ```
-fall_detection/fall_detection.ino
+Fall-Detection-System//fall_detection.ino
 ```
 
 using the Arduino IDE.
@@ -93,24 +102,25 @@ Install the libraries required by the project using the Arduino Library Manager.
 4. If a fall is detected, the system triggers an alert or detection event.
 
 ## Work Flow
+```text
 MPU6050
-      │
-      ▼
+    │
+    ▼
 Acceleration + Gyroscope
-      │
-      ▼
+    │
+    ▼
 Feature Extraction
-      │
-      ▼
-Embedded ML Model
-      │
-      ▼
+    │
+    ▼
+Embedded TinyML Model
+    │
+    ▼
 Fall Classification
-      │
-      ▼
-Alert
+    │
+    ▼
+Alert Generation
+```
 ---
-
 ## Hardware Workflow
 
 MPU6050
@@ -144,6 +154,14 @@ Decision
 * Smart healthcare
 * Home safety systems
 * Wearable devices
+
+---
+## ⚠️ Limitations
+
+- Requires proper sensor calibration
+- Performance depends on model quality
+- Tested with MPU6050 sensor
+- Does not include emergency communication
 
 ---
 
