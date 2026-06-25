@@ -32,9 +32,9 @@ An AI-powered Fall Detection System built using Arduino and motion sensors to de
 ## 📂 Project Structure
 
 ```
-Fall-dectection/
+Fall-Detection-System//
 │
-├── fall_detection/
+├── Fall-Detection-System//
 │   ├── config.h
 │   ├── fall_classifier.h
 │   ├── fall_detection.ino
@@ -77,7 +77,7 @@ git clone https://github.com/badivana/Fall-Detection-System.git
 Open:
 
 ```
-Fall-Detection-System//fall_detection.ino
+Fall-Detection-System/fall_detection/fall_detection.ino
 ```
 
 using the Arduino IDE.
@@ -123,16 +123,18 @@ Alert Generation
 ---
 ## Hardware Workflow
 
+```text
 MPU6050
-     │
-     ▼
+    │
+    ▼
 Arduino
-     │
-     ▼
+    │
+    ▼
 TinyML Model
-     │
-     ▼
+    │
+    ▼
 Decision
+```
 ---
 
 ## 📁 Files
